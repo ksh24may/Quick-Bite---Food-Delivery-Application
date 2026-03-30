@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <!-- Cart option -->
+    <!-- Toolbar Cart Option -->
     <item
         android:id="@+id/action_cart"
         android:title="Cart 🛒"
+        android:icon="@android:drawable/ic_menu_view"
         android:showAsAction="always"/>
 </menu>
