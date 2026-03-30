@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.restaurantapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="QuickBite"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.RestaurantApp">
+
+        <!-- Splash Screen (launch activity) -->
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <!-- Main Activity -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"/>
+
+        <!-- Menu Activity -->
+        <activity
+            android:name=".MenuActivity"
+            android:exported="false"/>
+
+        <!-- Cuisine Activity -->
+        <activity
+            android:name=".CuisineActivity"
+            android:exported="false"/>
+
+        <!-- Cart Activity -->
+        <activity
+            android:name=".CartActivity"
+            android:exported="false"/>
+
+        <!-- Payment Activity -->
+        <activity
+            android:name=".PaymentActivity"
+            android:exported="false"/>
+
+        <!-- Test Image Activity -->
+        <activity
+            android:name=".TestImageActivity"
+            android:exported="false"/>
+
+        <!-- Cuisine Detail Activity -->
+        <activity
+            android:name=".CuisineDetailActivity"
+            android:exported="false"/>
+
+        <!-- Details Activity -->
+        <activity
+            android:name=".DetailsActivity"
+            android:exported="false"/>
+
+    </application>
+
+</manifest>
