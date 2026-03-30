@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main"
+    android:padding="20dp">
+
+    <!-- Scrollable Header Section -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- 🍽️ App Logo -->
+            <ImageView
+                android:id="@+id/app_logo"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:src="@mipmap/ic_launcher"
+                android:contentDescription="@string/app_name"
+                android:layout_marginBottom="24dp"
+                android:scaleType="centerInside" />
+
+            <!-- Welcome Title -->
+            <TextView
+                android:id="@+id/welcome_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome to Foodie's Paradise!"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Subtitle -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delicious meals, desserts &amp; drinks await 🍕🍔🍰🥤"
+                android:textSize="16sp"
+                android:textColor="#555555"
+                android:gravity="center"
+                android:layout_marginBottom="32dp" />
+
+            <!-- 🔍 Search Bar -->
+            <AutoCompleteTextView
+                android:id="@+id/search_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Search food..."
+                android:completionThreshold="1"
+                android:drawableLeft="@android:drawable/ic_menu_search"
+                android:padding="12dp"
+                android:background="@android:drawable/edit_text"
+                android:layout_marginBottom="24dp" />
+
+            <!-- View Menu Button -->
+            <Button
+                android:id="@+id/btn_view_menu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="View Menu"
+                android:textSize="18sp"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Go to Cart Button -->
+            <Button
+                android:id="@+id/btn_go_to_cart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Go to Cart 🛒"
+                android:textSize="18sp"
+                android:padding="12dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Dynamic Fragment Container (fills rest of screen) -->
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>
